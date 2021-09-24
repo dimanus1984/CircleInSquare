@@ -8,8 +8,7 @@ void main()
 {
 	setlocale(LC_ALL, "Russian");
 	double side_a = 5;
-	double side_r = 2.5;
 	Square square = Square(side_a);
-	CircleInSquare circle = CircleInSquare(side_r);
+	CircleInSquare circle = CircleInSquare(side_a);
 	cout << circle.getRadius() << endl;
 }
