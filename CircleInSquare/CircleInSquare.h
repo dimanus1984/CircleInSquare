@@ -1,12 +1,12 @@
-#pragma once
+п»ї#pragma once
 #include"Circle.h"
 #include"Square.h"
 
 class CircleInSquare :public Circle, public Square
 {
 public:
-	// В квадрат можно вписать окружность.
-	// Радиус вписанной окружности равен половине стороны.
+	// Р’ РєРІР°РґСЂР°С‚ РјРѕР¶РЅРѕ РІРїРёСЃР°С‚СЊ РѕРєСЂСѓР¶РЅРѕСЃС‚СЊ.
+	// Р Р°РґРёСѓСЃ РІРїРёСЃР°РЅРЅРѕР№ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё СЂР°РІРµРЅ РїРѕР»РѕРІРёРЅРµ СЃС‚РѕСЂРѕРЅС‹.
 	CircleInSquare(double side) :Square(side), Circle(side / 2) {}
 };
 
